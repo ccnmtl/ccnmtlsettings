@@ -65,6 +65,9 @@ def common(**kwargs):
         'django.template.context_processors.debug',
         'django.template.context_processors.request',
         'django.template.context_processors.static',
+        'djangowind.context.context_processor',
+        'stagingcontext.staging_processor',
+        'gacontext.ga_processor',
     ]
 
     MIDDLEWARE_CLASSES = [
@@ -75,6 +78,9 @@ def common(**kwargs):
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
         'debug_toolbar.middleware.DebugToolbarMiddleware',
+        'django.contrib.messages.middleware.MessageMiddleware',
+        'waffle.middleware.WaffleMiddleware',
+        'impersonate.middleware.ImpersonateMiddleware',
     ]
 
     ROOT_URLCONF = project + '.urls'
@@ -97,6 +103,10 @@ def common(**kwargs):
         'django_jenkins',
         'gunicorn',
         'compressor',
+        'djangowind',
+        'impersonate',
+        'waffle',
+        'django_markwhat',
     ]
 
     INTERNAL_IPS = ['127.0.0.1']
@@ -144,6 +154,7 @@ def common(**kwargs):
         'anp8',
         'jb2410',
         'mar227',
+        'njn2118',
         'sld2131',
         'zm4',
     ]
@@ -167,5 +178,7 @@ def common(**kwargs):
         'version': 1,
         'disable_existing_loggers': True,
     }
+
+    GRAPHITE_BASE = "https://nanny-render.cul.columbia.edu/render/"
 
     return locals()
