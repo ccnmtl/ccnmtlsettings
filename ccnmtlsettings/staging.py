@@ -53,7 +53,7 @@ def common(**kwargs):
             STATIC_URL = 'https://%s/media/' % AWS_S3_CUSTOM_DOMAIN
         else:
             S3_URL = 'https://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-            STATIC_URL = ('https://%s.s3.amazonaws.com/compressor/'
+            STATIC_URL = ('https://%s.s3.amazonaws.com/media/'
                           % AWS_STORAGE_BUCKET_NAME)
         COMPRESS_ENABLED = True
         COMPRESS_OFFLINE = True
