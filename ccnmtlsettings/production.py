@@ -57,7 +57,7 @@ def common(**kwargs):
         COMPRESS_URL = STATIC_URL
         DEFAULT_FILE_STORAGE = 'cacheds3storage.MediaRootS3BotoStorage'
         COMPRESS_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
-        MEDIA_URL = S3_URL + '/media/'
+        MEDIA_URL = S3_URL + 'uploads/'
         AWS_QUERYSTRING_AUTH = False
     else:
         # non S3 mode
