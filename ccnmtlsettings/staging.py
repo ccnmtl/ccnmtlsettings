@@ -35,7 +35,7 @@ def common(**kwargs):
 
     STATSD_PREFIX = project + "-staging"
 
-    MEDIA_ROOT = '/var/www/' + project + '/mediamachine/uploads/'
+    MEDIA_ROOT = '/var/www/' + project + '/uploads/'
 
     # put any static media here to override app served static media
     STATICMEDIA_MOUNTS = [
