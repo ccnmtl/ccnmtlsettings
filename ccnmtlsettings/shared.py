@@ -96,6 +96,7 @@ def common(**kwargs):
         'django.contrib.sites',
         'django.contrib.flatpages',
         'django.contrib.staticfiles',
+        'django.contrib.messages',
         'django.contrib.admin',
         'django_statsd',
         'smoketest',
