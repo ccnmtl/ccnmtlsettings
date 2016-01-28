@@ -131,6 +131,7 @@ def common(**kwargs):
     EMAIL_SUBJECT_PREFIX = "[" + project + "] "
     EMAIL_HOST = 'localhost'
     SERVER_EMAIL = project + "@ccnmtl.columbia.edu"
+    DEFAULT_FROM_EMAIL = SERVER_EMAIL
 
     STATICMEDIA_MOUNTS = [
         ('/sitemedia', 'sitemedia'),
