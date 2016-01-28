@@ -1,3 +1,7 @@
+0.1.4 (2016-1-28)
+==================
+* set DEFAULT_FROM_EMAIL
+
 0.1.3 (2015-12-17)
 ==================
 * fix MEDIA_ROOT path for staging
