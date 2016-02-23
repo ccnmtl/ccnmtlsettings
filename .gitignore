@@ -3,3 +3,5 @@
 ve
 build
 dist
+.project
+.pydevproject
