@@ -40,6 +40,10 @@ def common(**kwargs):
             }
         }
 
+        PASSWORD_HASHERS = (
+            'django.contrib.auth.hashers.MD5PasswordHasher',
+        )
+
     JENKINS_TASKS = [
         'django_jenkins.tasks.run_pep8',
         'django_jenkins.tasks.run_pyflakes',
