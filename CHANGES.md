@@ -1,3 +1,8 @@
+0.2.0 (2016-04-01)
+==================
+
+* remove cld2156 from admin list
+
 0.1.6 (2016-03-12)
 ==================
 * select a significantly faster password hashing method for unit tests
