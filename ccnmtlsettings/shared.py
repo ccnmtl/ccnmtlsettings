@@ -16,7 +16,7 @@ def common(**kwargs):
     ALLOWED_HOSTS = [
         '.ctl.columbia.edu',
         '.ccnmtl.columbia.edu',
-        'localhost'
+        'localhost',
     ]
 
     DATABASES = {
