@@ -1,3 +1,5 @@
+* add `.ctl.columbia.edu` to `ALLOWED_HOSTS`
+
 0.2.0 (2016-04-01)
 ==================
 
