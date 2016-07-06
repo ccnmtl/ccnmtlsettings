@@ -13,7 +13,11 @@ def common(**kwargs):
     ADMINS = []
     MANAGERS = ADMINS
 
-    ALLOWED_HOSTS = ['.ccnmtl.columbia.edu', 'localhost']
+    ALLOWED_HOSTS = [
+        '.ctl.columbia.edu',
+        '.ccnmtl.columbia.edu',
+        'localhost'
+    ]
 
     DATABASES = {
         'default': {
