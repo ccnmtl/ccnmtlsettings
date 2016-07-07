@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ccnmtlsettings",
-    version="0.2.0",
+    version="0.3.0",
     author="Anders Pearson",
     author_email="anders@columbia.edu",
     url="https://github.com/ccnmtl/ccnmtlsettings",
