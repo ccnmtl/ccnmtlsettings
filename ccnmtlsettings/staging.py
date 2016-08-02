@@ -14,7 +14,6 @@ def common(**kwargs):
     cloudfront = kwargs.get('cloudfront', None)
 
     DEBUG = False
-    TEMPLATE_DEBUG = DEBUG
     STAGING_ENV = True
 
     DATABASES = {
@@ -28,10 +27,6 @@ def common(**kwargs):
             'ATOMIC_REQUESTS': True,
         }
     }
-
-    TEMPLATE_DIRS = [
-        os.path.join(base, "templates"),
-    ]
 
     STATSD_PREFIX = project + "-staging"
 

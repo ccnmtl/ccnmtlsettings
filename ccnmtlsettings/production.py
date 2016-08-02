@@ -14,7 +14,6 @@ def common(**kwargs):
     cloudfront = kwargs.get('cloudfront', None)
 
     DEBUG = False
-    TEMPLATE_DEBUG = DEBUG
 
     DATABASES = {
         'default': {
@@ -27,10 +26,6 @@ def common(**kwargs):
             'ATOMIC_REQUESTS': True,
         }
     }
-
-    TEMPLATE_DIRS = [
-        os.path.join(base, "templates"),
-    ]
 
     MEDIA_ROOT = '/var/www/' + project + '/uploads/'
 

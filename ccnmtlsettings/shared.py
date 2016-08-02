@@ -63,20 +63,30 @@ def common(**kwargs):
     MEDIA_URL = '/uploads/'
     STATIC_URL = '/media/'
     SECRET_KEY = 'you must override this'
-    TEMPLATE_LOADERS = [
-        'django.template.loaders.filesystem.Loader',
-        'django.template.loaders.app_directories.Loader',
-    ]
-
-    TEMPLATE_CONTEXT_PROCESSORS = [
-        'django.contrib.auth.context_processors.auth',
-        'django.template.context_processors.debug',
-        'django.template.context_processors.request',
-        'django.contrib.messages.context_processors.messages',
-        'django.template.context_processors.static',
-        'djangowind.context.context_processor',
-        'stagingcontext.staging_processor',
-        'gacontext.ga_processor',
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+            'DIRS': [
+                os.path.join(base, "templates"),
+            ],
+            'APP_DIRS': True,
+            'OPTIONS': {
+                'context_processors': [
+                    # Insert your TEMPLATE_CONTEXT_PROCESSORS here or use this
+                    # list if you haven't customized them:
+                    'django.contrib.auth.context_processors.auth',
+                    'django.template.context_processors.debug',
+                    'django.template.context_processors.media',
+                    'django.template.context_processors.static',
+                    'django.template.context_processors.tz',
+                    'django.template.context_processors.request',
+                    'django.contrib.messages.context_processors.messages',
+                    'djangowind.context.context_processor',
+                    'stagingcontext.staging_processor',
+                    'gacontext.ga_processor',
+                ],
+            },
+        },
     ]
 
     MIDDLEWARE_CLASSES = [
@@ -93,10 +103,6 @@ def common(**kwargs):
     ]
 
     ROOT_URLCONF = project + '.urls'
-
-    TEMPLATE_DIRS = [
-        os.path.join(base, "templates"),
-    ]
 
     INSTALLED_APPS = [
         'django.contrib.auth',
