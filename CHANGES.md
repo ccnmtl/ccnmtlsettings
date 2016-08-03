@@ -1,3 +1,12 @@
+1.0.0 (2016-08-03)
+==================
+
+* NOT BACKWARDS COMPATIBLE: converted `TEMPLATES` setting to new style
+  (Django 1.10 compatible). If you are modifying any template settings
+  in `settings_staging.py`, `settings_production.py`, etc. you will
+  now need to copy in and override the entire `TEMPLATES` block
+  instead.
+
 0.3.0 (2016-07-07)
 ==================
 
