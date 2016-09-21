@@ -1,3 +1,5 @@
+* add docker and docker-compose settings
+
 1.0.0 (2016-08-03)
 ==================
 
