@@ -12,6 +12,7 @@ def common(**kwargs):
     # optional args
     s3static = kwargs.get('s3static', True)
     cloudfront = kwargs.get('cloudfront', None)
+    s3prefix = kwargs.get('s3prefix', 'ccnmtl')
 
     DEBUG = False
 
@@ -35,7 +36,7 @@ def common(**kwargs):
 
     if s3static:
         # serve static files off S3
-        AWS_STORAGE_BUCKET_NAME = "ccnmtl-" + project + "-static-prod"
+        AWS_STORAGE_BUCKET_NAME = s3prefix + "-" + project + "-static-prod"
         AWS_PRELOAD_METADATA = True
         STATICFILES_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
         if cloudfront:

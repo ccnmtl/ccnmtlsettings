@@ -1,3 +1,6 @@
+* allow S3 bucket prefix to be overridden with the `s3prefix`
+  parameter
+
 1.0.0 (2016-08-03)
 ==================
 
