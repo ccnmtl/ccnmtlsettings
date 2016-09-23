@@ -1,3 +1,6 @@
+1.1.0 (2016-09-23)
+==================
+
 * allow S3 bucket prefix to be overridden with the `s3prefix`
   parameter
 * add docker and docker-compose settings
