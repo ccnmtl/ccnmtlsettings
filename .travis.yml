@@ -1,5 +1,9 @@
 sudo: false
 language: python
+install:
+  - pip install flake8
+script:
+  - flake8 ccnmtlsettings
 deploy:
   provider: pypi
   user: ctlpypi

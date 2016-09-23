@@ -1,3 +1,4 @@
+# flake8: noqa
 # docker-compose settings doesn't really have to do much
 # since it's a dev environment and is mostly covered by
 # settings_shared. mostly, it just has to set up some
