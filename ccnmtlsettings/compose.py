@@ -18,5 +18,6 @@ def common(**kwargs):
             'PORT': 5432,
             'ATOMIC_REQUESTS': True,
         }
+    }
     EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
     return locals()

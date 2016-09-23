@@ -1,3 +1,5 @@
+* fixed syntax error in `compose.py`
+
 1.1.1 (2016-09-23)
 ==================
 
