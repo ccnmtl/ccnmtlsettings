@@ -47,6 +47,7 @@ def common(**kwargs):
     # -------------------------------------------
 
     DEBUG = False
+    TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa
 
     DATABASES = {
         'default': {
