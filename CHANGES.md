@@ -1,3 +1,9 @@
+1.1.3 (2016-09-30)
+==================
+
+* TEMPLATE_DEBUG is deprecated. Using the new `debug` key under
+`TEMPLATES['OPTIONS']`
+
 1.1.2 (2016-09-26)
 ==================
 
