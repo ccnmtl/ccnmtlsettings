@@ -7,6 +7,7 @@ def common(**kwargs):
     base = kwargs['base']
     STATIC_ROOT = kwargs['STATIC_ROOT']
     INSTALLED_APPS = kwargs['INSTALLED_APPS']
+    TEMPLATES = kwargs['TEMPLATES']
 
     # optional args
     s3static = kwargs.get('s3static', True)
