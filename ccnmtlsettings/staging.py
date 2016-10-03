@@ -7,6 +7,7 @@ def common(**kwargs):
     base = kwargs['base']
     STATIC_ROOT = kwargs['STATIC_ROOT']
     INSTALLED_APPS = kwargs['INSTALLED_APPS']
+    TEMPLATES = kwargs.get('TEMPLATES', None)
 
     # optional args
     s3static = kwargs.get('s3static', True)
@@ -14,7 +15,8 @@ def common(**kwargs):
     s3prefix = kwargs.get('s3prefix', 'ccnmtl')
 
     DEBUG = False
-    TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa
+    if TEMPLATES:
+        TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa
     STAGING_ENV = True
 
     DATABASES = {

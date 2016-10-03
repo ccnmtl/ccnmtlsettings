@@ -1,3 +1,8 @@
+1.1.4 (2016-10-03)
+==================
+
+* Expect TEMPLATES to be passed along to staging, production & docker bases
+
 1.1.3 (2016-09-30)
 ==================
 
