@@ -8,7 +8,6 @@ def common(**kwargs):
     base = kwargs['base']
 
     DEBUG = True
-    TEMPLATE_DEBUG = DEBUG
 
     ADMINS = []
     MANAGERS = ADMINS
