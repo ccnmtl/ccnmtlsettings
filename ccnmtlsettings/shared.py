@@ -8,6 +8,7 @@ def common(**kwargs):
     base = kwargs['base']
 
     DEBUG = True
+    TEMPLATE_DEBUG = DEBUG
 
     ADMINS = []
     MANAGERS = ADMINS
@@ -70,7 +71,6 @@ def common(**kwargs):
             ],
             'APP_DIRS': True,
             'OPTIONS': {
-                'debug': True,
                 'context_processors': [
                     # Insert your TEMPLATE_CONTEXT_PROCESSORS here or use this
                     # list if you haven't customized them:

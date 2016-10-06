@@ -14,7 +14,6 @@ def common(**kwargs):
     s3prefix = kwargs.get('s3prefix', 'ccnmtl')
 
     DEBUG = False
-    TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa
     STAGING_ENV = True
 
     DATABASES = {
