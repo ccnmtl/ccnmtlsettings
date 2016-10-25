@@ -168,7 +168,6 @@ def common(**kwargs):
     WIND_SUPERUSER_MAPPER_GROUPS = [
         'amm8',
         'anp8',
-        'jb2410',
         'mar227',
         'njn2118',
         'sld2131',
