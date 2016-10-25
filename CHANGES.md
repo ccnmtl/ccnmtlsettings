@@ -1,3 +1,5 @@
+* remove `jb2410` from superusers list
+
 1.1.2 (2016-09-26)
 ==================
 
