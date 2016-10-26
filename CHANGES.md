@@ -1,3 +1,6 @@
+1.2.0 (2016-10-26)
+==================
+
 * remove `jb2410` from superusers list
 * add Nick B to superusers list
 
