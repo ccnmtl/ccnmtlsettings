@@ -195,6 +195,6 @@ def common(**kwargs):
         'disable_existing_loggers': True,
     }
 
-    GRAPHITE_BASE = "https://nanny-render.cul.columbia.edu/render/"
+    GRAPHITE_BASE = "https://graphite.ctl.columbia.edu/render/"
 
     return locals()
