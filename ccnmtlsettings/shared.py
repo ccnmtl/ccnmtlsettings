@@ -95,7 +95,6 @@ def common(**kwargs):
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-        'debug_toolbar.middleware.DebugToolbarMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'waffle.middleware.WaffleMiddleware',
         'impersonate.middleware.ImpersonateMiddleware',
@@ -114,7 +113,6 @@ def common(**kwargs):
         'django.contrib.admin',
         'django_statsd',
         'smoketest',
-        'debug_toolbar',
         'django_jenkins',
         'gunicorn',
         'compressor',
@@ -125,15 +123,6 @@ def common(**kwargs):
     ]
 
     INTERNAL_IPS = ['127.0.0.1']
-    DEBUG_TOOLBAR_PANELS = [
-        'debug_toolbar.panels.version.VersionDebugPanel',
-        'debug_toolbar.panels.timer.TimerDebugPanel',
-        'debug_toolbar.panels.headers.HeaderDebugPanel',
-        'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
-        'debug_toolbar.panels.template.TemplateDebugPanel',
-        'debug_toolbar.panels.sql.SQLDebugPanel',
-        'debug_toolbar.panels.signals.SignalDebugPanel',
-    ]
 
     STATSD_CLIENT = 'statsd.client'
     STATSD_PREFIX = project
