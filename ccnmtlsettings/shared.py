@@ -156,7 +156,6 @@ def common(**kwargs):
     WIND_STAFF_MAPPER_GROUPS = ['tlc.cunix.local:columbia.edu']
     WIND_SUPERUSER_MAPPER_GROUPS = [
         'amm8',
-        'anp8',
         'mar227',
         'nb2413',
         'njn2118',
