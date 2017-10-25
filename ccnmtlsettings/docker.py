@@ -10,7 +10,7 @@ def common(**kwargs):
     # have to pull in anything that we'll be changing
     STATIC_ROOT = kwargs['STATIC_ROOT']
     INSTALLED_APPS = kwargs['INSTALLED_APPS']
-    MIDDLEWARE_CLASSES = kwargs['MIDDLEWARE_CLASSES']
+    MIDDLEWARE = kwargs['MIDDLEWARE']
 
     # required settings:
     SECRET_KEY = os.environ['SECRET_KEY']
