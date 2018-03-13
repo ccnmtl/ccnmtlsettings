@@ -1,10 +1,7 @@
 1.4.0
 ==================
 
-* Now using `MIDDLEWARE` instead of the old
-  `MIDDLEWARE_CLASSES`. Applications upgrading to ccnmtlsettings 1.4.0
-  will need to replace MIDDLEWARE_CLASSES with MIDDLEWARE in settings
-  files.
+* Support both `MIDDLEWARE` and `MIDDLEWARE_CLASSES`.
 
 1.3.1 (2017-06-30)
 ==================
