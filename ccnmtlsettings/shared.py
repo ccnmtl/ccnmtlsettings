@@ -88,8 +88,7 @@ def common(**kwargs):
         },
     ]
 
-    # Django 1.x
-    MIDDLEWARE_CLASSES = [
+    MIDDLEWARE = [
         'django_statsd.middleware.GraphiteRequestTimingMiddleware',
         'django_statsd.middleware.GraphiteMiddleware',
         'django.middleware.common.CommonMiddleware',
@@ -100,8 +99,6 @@ def common(**kwargs):
         'waffle.middleware.WaffleMiddleware',
         'impersonate.middleware.ImpersonateMiddleware',
     ]
-    # DJANGO 2.X
-    MIDDLEWARE = MIDDLEWARE_CLASSES
 
     ROOT_URLCONF = project + '.urls'
 
