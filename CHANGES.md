@@ -1,4 +1,8 @@
-1.4.0
+1.5.0
+==================
+* Update SERVER_EMAIL to project@mail.ctl.columbia.edu
+
+1.4.0 (2018-03-13)
 ==================
 
 * Support both `MIDDLEWARE` and `MIDDLEWARE_CLASSES`.
