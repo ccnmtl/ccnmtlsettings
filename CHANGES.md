@@ -1,4 +1,4 @@
-1.5.0
+1.5.0 (2019-01-31)
 ==================
 * Update SERVER_EMAIL to project@mail.ctl.columbia.edu
 

@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="ccnmtlsettings",
-    version="1.4.0",
+    version="1.5.0",
     author="Anders Pearson",
-    author_email="anders@columbia.edu",
+    author_email="ctl-dev@columbia.edu",
     url="https://github.com/ccnmtl/ccnmtlsettings",
     description="CCNMTL common Django base settings",
     long_description="common settings we use across all our projects",
