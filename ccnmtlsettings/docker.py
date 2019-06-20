@@ -32,6 +32,7 @@ def common(**kwargs):
 
     AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_S3_CUSTOM_DOMAIN', '')
     AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', '')
+    AWS_DEFAULT_ACL = 'public-read'
     AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY', '')
     AWS_SECRET_KEY = os.environ.get('AWS_SECRET_KEY', '')
     AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY
