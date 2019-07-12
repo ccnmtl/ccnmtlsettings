@@ -85,7 +85,7 @@ modify this way to get it to ignore it.
 You'll do almost the same thing for your `settings_staging.py` and
 `settings_production.py`:
 
-	from settings_shared import *
+	from myapp.settings_shared import *
 	from ccnmtlsettings.staging import common
 	import os
 
@@ -102,7 +102,7 @@ You'll do almost the same thing for your `settings_staging.py` and
 		))
 
 	try:
-		from local_settings import *
+		from myapp.local_settings import *
 	except ImportError:
 		pass
 
