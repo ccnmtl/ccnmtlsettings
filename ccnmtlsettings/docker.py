@@ -1,5 +1,4 @@
 import os
-import sys
 
 
 def common(**kwargs):
@@ -43,8 +42,6 @@ def common(**kwargs):
 
     TIME_ZONE = os.environ.get('TIME_ZONE', 'America/New_York')
 
-    RAVEN_DSN = os.environ.get('RAVEN_DSN', '')
-
     # -------------------------------------------
 
     DEBUG = False
@@ -72,12 +69,6 @@ def common(**kwargs):
         COMPRESS_ROOT = STATIC_ROOT
         COMPRESS_URL = STATIC_URL
         COMPRESS_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
-
-    if RAVEN_DSN and 'migrate' not in sys.argv:
-        INSTALLED_APPS.append('raven.contrib.django.raven_compat')
-        RAVEN_CONFIG = {
-            'dsn': RAVEN_DSN,
-        }
 
     LOGGING = {
         'version': 1,
