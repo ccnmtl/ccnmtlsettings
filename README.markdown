@@ -29,7 +29,7 @@ The following libraries are used in some way, so they'll need to be installed:
 * django-cacheds3storage
 * django-impersonate
 * django-cacheds3storage
-* raven
+* sentry
 * statsd
 * gunicorn
 * djangowind

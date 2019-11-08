@@ -1,6 +1,3 @@
-import sys
-
-
 def common(**kwargs):
     # required args
     project = kwargs['project']
@@ -60,8 +57,5 @@ def common(**kwargs):
         STATICFILES_DIRS = ()
         STATIC_ROOT = "/var/www/" + project + "/" + project + "/media/"
         COMPRESS_ROOT = STATIC_ROOT
-
-    if 'migrate' not in sys.argv:
-        INSTALLED_APPS.append('raven.contrib.django.raven_compat')
 
     return locals()

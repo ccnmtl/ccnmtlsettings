@@ -1,5 +1,6 @@
 * Add AWS_DEFAULT_ACL = 'public-read'
 * Use boto3 in docker settings
+* Remove raven, replace with sentry-sdk
 
 1.5.0 (2019-01-31)
 ==================

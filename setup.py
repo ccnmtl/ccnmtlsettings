@@ -16,7 +16,7 @@ setup(
         "django-smoketest",
         "django-extensions",
         "django-statsd-mozilla",
-        "raven",
+        "sentry-sdk",
         "django-markwhat",
         "django-storages-redux",
         "django-cacheds3storage",
