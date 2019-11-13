@@ -1,4 +1,4 @@
-# ccnmtlsettings
+# ccnmtlsettings [![Build Status](https://travis-ci.org/ccnmtl/ccnmtlsettings.svg?branch=master)](https://travis-ci.org/ccnmtl/ccnmtlsettings)
 
 These are the common settings we use across all our Django apps,
 extracted into a handy reusable module.
