@@ -1,3 +1,12 @@
+1.7.0 (2019-11-22)
+==================
+* Add XFrameOptionsMiddleware
+* Add SecurityMiddleware
+* Add CsrfViewMiddleware
+* Flag CSRF and Session cookie as secure
+* Flag CSRF and Session cookie as http only
+
+
 1.6.0 (2019-11-08)
 ==================
 * Add AWS_DEFAULT_ACL = 'public-read'
