@@ -98,6 +98,9 @@ def common(**kwargs):
         'django.contrib.messages.middleware.MessageMiddleware',
         'waffle.middleware.WaffleMiddleware',
         'impersonate.middleware.ImpersonateMiddleware',
+        'django.middleware.security.SecurityMiddleware',
+        'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware'
     ]
 
     ROOT_URLCONF = project + '.urls'
@@ -165,7 +168,12 @@ def common(**kwargs):
 
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
     SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
     SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SECURE = True
+
+    CSRF_COOKIE_SECURE = True
+    CSRF_COOKIE_HTTPONLY = True
 
     STATIC_ROOT = "/tmp/" + project + "/static"
     STATICFILES_DIRS = ["media/"]
