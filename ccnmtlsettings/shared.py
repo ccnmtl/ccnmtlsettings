@@ -99,8 +99,7 @@ def common(**kwargs):
         'waffle.middleware.WaffleMiddleware',
         'impersonate.middleware.ImpersonateMiddleware',
         'django.middleware.security.SecurityMiddleware',
-        'django.middleware.clickjacking.XFrameOptionsMiddleware',
-        'django.middleware.csrf.CsrfViewMiddleware'
+        'django.middleware.clickjacking.XFrameOptionsMiddleware'
     ]
 
     ROOT_URLCONF = project + '.urls'
