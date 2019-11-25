@@ -2,7 +2,6 @@
 ==================
 * Add XFrameOptionsMiddleware
 * Add SecurityMiddleware
-* Add CsrfViewMiddleware
 * Flag CSRF and Session cookie as secure
 * Flag CSRF and Session cookie as http only
 
