@@ -1,4 +1,4 @@
-1.8.0
+1.8.0 (2020-01-23)
 ==================
 * Replace django-jenkins with coverage
 
