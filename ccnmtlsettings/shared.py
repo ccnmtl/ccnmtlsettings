@@ -47,11 +47,6 @@ def common(**kwargs):
             'django.contrib.auth.hashers.MD5PasswordHasher',
         )
 
-    JENKINS_TASKS = [
-        'django_jenkins.tasks.run_pep8',
-        'django_jenkins.tasks.run_pyflakes',
-    ]
-
     TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
     TIME_ZONE = 'America/New_York'
@@ -115,7 +110,6 @@ def common(**kwargs):
         'django.contrib.admin',
         'django_statsd',
         'smoketest',
-        'django_jenkins',
         'gunicorn',
         'compressor',
         'djangowind',

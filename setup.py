@@ -12,7 +12,7 @@ setup(
         "django_compressor",
         "django-debug-toolbar",
         "django-waffle",
-        "django-jenkins",
+        "coverage",
         "django-smoketest",
         "django-extensions",
         "django-statsd-mozilla",

@@ -1,3 +1,7 @@
+1.8.0
+==================
+* Replace django-jenkins with coverage
+
 1.7.0 (2019-11-22)
 ==================
 * Add XFrameOptionsMiddleware
