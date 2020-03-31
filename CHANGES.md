@@ -1,3 +1,7 @@
+1.8.1
+==================
+* Change `CSRF_COOKIE_HTTPONLY` to False.
+
 1.8.0 (2020-01-23)
 ==================
 * Replace django-jenkins with coverage

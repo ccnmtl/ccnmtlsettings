@@ -166,7 +166,7 @@ def common(**kwargs):
     SESSION_COOKIE_SECURE = True
 
     CSRF_COOKIE_SECURE = True
-    CSRF_COOKIE_HTTPONLY = True
+    CSRF_COOKIE_HTTPONLY = False
 
     STATIC_ROOT = "/tmp/" + project + "/static"
     STATICFILES_DIRS = ["media/"]
