@@ -7,12 +7,3 @@ install:
   - pip install flake8
 script:
   - flake8 ccnmtlsettings
-deploy:
-  provider: pypi
-  distributions: "sdist bdist_wheel"
-  user: ctlpypi
-  password:
-    secure: GzDZrLUUvaRUd95ryFMTTzIz72x9LYPRWA1Rlg0wpOX3EUy+2k9EwZKEE2EKrSFZTMyt2SzDapq1VRKMysj5EKXUbCIP5JXwlCFAW+BZ88zqjKGg8GN4zdXiRgD3PuGfosT5C0x4Nvq+5QsZXPWhoZf5B7+wgCu0EpsumQZFk1UU3lA3CUs+b5dCkXvx3HFXDVczv+ElnThZJf9lcdDWXecYR6IwTNWWaEV0UgJxTM6igqdKYm0l+nFbDXznbKb50p3sYroqwwfxIL1NIhCvMAzjIbBLoBO2hZvvUu9l27vVQ+CUH74ywGlAyezjM5kI3Qs4/MRPqQdESlGsy3PP/TkHmw9QK0uhwiX/rv9lZIOw6UlJ65vfFIYwOL84dENNQbtt6cqhguhnK8M1A7aCpwWR+UGTkw5egbumui0Z0BdzNyIApeAuQj01VcB4t847uME8Aa2QGSI0F88CWHTuOW0nWiErWteNFZTQb/TEEEXL6kZWN/UvRqZMoHWiFhsjr6e7iWN7NK/s6Mt1vLxoSBxNbBMXrvLli1ihnSX9fxL5tXYm+3sq/Iw0jQoUu/lTICXozlht2a8SrkgJLbr6q/iup6jXYsTGg3nL4/rqukwTKGbBcrN0oSMYy40rTRCg8QuElwP71FSDmE/5dTHguxWfcLlWuL/mhM4vFuyQ6q4=
-  on:
-    tags: true
-    repo: ccnmtl/ccnmtlsettings
