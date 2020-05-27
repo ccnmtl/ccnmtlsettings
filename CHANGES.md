@@ -1,3 +1,5 @@
+* Use s3boto3 storage backend from django-storages
+
 1.8.0 (2020-01-23)
 ==================
 * Replace django-jenkins with coverage

@@ -19,7 +19,7 @@ setup(
         "sentry-sdk",
         "django-markwhat",
         "django-storages-redux",
-        "django-cacheds3storage",
+        "boto3",
         "statsd",
         "gunicorn",
         "djangowind",
