@@ -1,3 +1,7 @@
+1.8.2 (2020-05-28)
+==================
+* Fix s3boto3 module path name
+
 1.8.1 (2020-05-28)
 ==================
 * Use s3boto3 storage backend from django-storages, for compatibility
