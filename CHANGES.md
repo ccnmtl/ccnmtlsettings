@@ -1,4 +1,7 @@
-* Use s3boto3 storage backend from django-storages
+1.8.1 (2020-05-28)
+==================
+* Use s3boto3 storage backend from django-storages, for compatibility
+  with django-storages>=1.9.0.
 
 1.8.0 (2020-01-23)
 ==================
