@@ -26,9 +26,8 @@ The following libraries are used in some way, so they'll need to be installed:
 * django-statsd-mozilla
 * django-markwhat
 * django-storages-redux
-* django-cacheds3storage
 * django-impersonate
-* django-cacheds3storage
+* boto3
 * sentry-sdk
 * statsd
 * gunicorn
