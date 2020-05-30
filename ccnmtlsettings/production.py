@@ -48,7 +48,7 @@ def common(**kwargs):
         COMPRESS_OFFLINE = True
         COMPRESS_ROOT = STATIC_ROOT
         COMPRESS_URL = STATIC_URL
-        DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+        DEFAULT_FILE_STORAGE = 'ccnmtlsettings.storage.UploadsS3Boto3Storage'
         COMPRESS_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
         MEDIA_URL = S3_URL + 'uploads/'
         AWS_QUERYSTRING_AUTH = False
