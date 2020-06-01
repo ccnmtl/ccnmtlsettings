@@ -39,7 +39,7 @@ def common(**kwargs):
         AWS_STORAGE_BUCKET_NAME = s3prefix + "-" + project + "-static-stage"
         AWS_DEFAULT_ACL = 'public-read'
         AWS_PRELOAD_METADATA = True
-        STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+        STATICFILES_STORAGE = 'ccnmtlsettings.storage.CompressorS3Boto3Storage'
         if cloudfront:
             AWS_S3_CUSTOM_DOMAIN = cloudfront + '.cloudfront.net'
             S3_URL = 'https://%s/' % AWS_S3_CUSTOM_DOMAIN
@@ -52,8 +52,8 @@ def common(**kwargs):
         COMPRESS_OFFLINE = True
         COMPRESS_ROOT = STATIC_ROOT
         COMPRESS_URL = STATIC_URL
-        DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-        COMPRESS_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+        DEFAULT_FILE_STORAGE = 'ccnmtlsettings.storage.MediaRootS3Boto3Storage'
+        COMPRESS_STORAGE = 'ccnmtlsettings.storage.CompressorS3Boto3Storage'
         MEDIA_URL = S3_URL + 'uploads/'
         AWS_QUERYSTRING_AUTH = False
     else:
