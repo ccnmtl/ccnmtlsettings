@@ -1,3 +1,7 @@
+1.8.3 (2020-06-01)
+==================
+* Specify directories for static & uploaded files
+
 1.8.2 (2020-05-28)
 ==================
 * Fix s3boto3 module path name
