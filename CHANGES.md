@@ -1,3 +1,8 @@
+1.8.4
+==================
+* Use django-cacheds3storage again, for
+  django-compressor/django-storages integration.
+
 1.8.3 (2020-06-01)
 ==================
 * Specify directories for static & uploaded files

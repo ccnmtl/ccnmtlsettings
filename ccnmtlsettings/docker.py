@@ -59,16 +59,16 @@ def common(**kwargs):
 
     if AWS_S3_CUSTOM_DOMAIN:
         AWS_PRELOAD_METADATA = True
-        DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+        DEFAULT_FILE_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
         S3_URL = 'https://%s/' % AWS_S3_CUSTOM_DOMAIN
         # static data, e.g. css, js, etc.
-        STATICFILES_STORAGE = 'ccnmtlsettings.storage.CompressorS3Boto3Storage'
+        STATICFILES_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
         STATIC_URL = 'https://%s/media/' % AWS_S3_CUSTOM_DOMAIN
         COMPRESS_ENABLED = True
         COMPRESS_OFFLINE = True
         COMPRESS_ROOT = STATIC_ROOT
         COMPRESS_URL = STATIC_URL
-        COMPRESS_STORAGE = 'ccnmtlsettings.storage.CompressorS3Boto3Storage'
+        COMPRESS_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
 
     LOGGING = {
         'version': 1,
