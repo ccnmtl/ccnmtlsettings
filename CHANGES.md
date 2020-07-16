@@ -1,3 +1,7 @@
+1.8.4
+==================
+* Introduce ccnmtlsettings.storage.CachedS3Boto3Storage
+
 1.8.3 (2020-06-01)
 ==================
 * Specify directories for static & uploaded files
