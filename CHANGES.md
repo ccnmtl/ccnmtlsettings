@@ -1,4 +1,4 @@
-1.8.4
+1.8.4 (2020-07-16)
 ==================
 * Use django-cacheds3storage again, for
   django-compressor/django-storages integration.
