@@ -1,3 +1,7 @@
+1.9.0
+==================
+* Remove python 2 support
+
 1.8.4 (2020-07-16)
 ==================
 * Use django-cacheds3storage again, for
