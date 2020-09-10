@@ -37,7 +37,9 @@ def common(**kwargs):
     if s3static:
         # serve static files off S3
         AWS_STORAGE_BUCKET_NAME = s3prefix + "-" + project + "-static-stage"
-        AWS_DEFAULT_ACL = 'public-read'
+        AWS_S3_OBJECT_PARAMETERS = {
+            'ACL': 'public-read',
+        }
         AWS_PRELOAD_METADATA = True
         STATICFILES_STORAGE = 'cacheds3storage.CompressorS3BotoStorage'
         if cloudfront:
