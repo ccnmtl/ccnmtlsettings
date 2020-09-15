@@ -1,6 +1,7 @@
 1.9.0
 ==================
 * Remove python 2 support
+* django-storages settings update
 
 1.8.4 (2020-07-16)
 ==================
