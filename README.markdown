@@ -25,7 +25,7 @@ The following libraries are used in some way, so they'll need to be installed:
 * django-extensions
 * django-statsd-mozilla
 * django-markwhat
-* django-storages-redux
+* django-storages
 * django-impersonate
 * boto3
 * sentry-sdk
