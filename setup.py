@@ -18,7 +18,7 @@ setup(
         "django-statsd-mozilla",
         "sentry-sdk",
         "django-markwhat",
-        "django-storages-redux",
+        "django-storages",
         "boto3",
         "statsd",
         "gunicorn",
