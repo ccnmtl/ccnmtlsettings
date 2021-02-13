@@ -48,7 +48,7 @@ def common(**kwargs):
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'ENGINE': 'django.db.backends.postgresql',
             'NAME': DB_NAME,
             'HOST': DB_HOST,
             'PORT': DB_PORT,
