@@ -1,3 +1,7 @@
+1.9.1
+==================
+* Fix postgresql engine name
+
 1.9.0 (2020-09-15)
 ==================
 * Remove python 2 support
