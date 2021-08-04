@@ -1,6 +1,7 @@
-1.9.1
+1.9.1 (2021-08-04)
 ==================
 * Fix postgresql engine name
+* Removed AWS S3 'public-read' default setting
 
 1.9.0 (2020-09-15)
 ==================
