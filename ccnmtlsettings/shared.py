@@ -153,10 +153,10 @@ def common(**kwargs):
     WIND_SUPERUSER_MAPPER_GROUPS = [
         'amm8',
         'mar227',
-        'nb2413',
         'njn2118',
         'sld2131',
         'zm4',
+        'nd2664'
     ]
 
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
