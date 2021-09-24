@@ -1,3 +1,7 @@
+1.9.2
+==================
+* Enable django file logging
+
 1.9.1 (2021-08-04)
 ==================
 * Fix postgresql engine name
