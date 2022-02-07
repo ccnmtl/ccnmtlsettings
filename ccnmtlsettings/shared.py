@@ -128,7 +128,7 @@ def common(**kwargs):
     THUMBNAIL_SUBDIR = "thumbs"
     EMAIL_SUBJECT_PREFIX = "[" + project + "] "
     EMAIL_HOST = 'localhost'
-    SERVER_EMAIL = project + "@mail.ctl.columbia.edu"
+    SERVER_EMAIL = project + "-noreply@mail.ctl.columbia.edu"
     DEFAULT_FROM_EMAIL = SERVER_EMAIL
 
     STATICMEDIA_MOUNTS = [
