@@ -1,6 +1,7 @@
-1.9.2
+1.10.0
 ==================
 * Enable django file logging
+* Migrate to django-cas-ng, from djangowind
 
 1.9.1 (2021-08-04)
 ==================

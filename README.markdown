@@ -31,7 +31,7 @@ The following libraries are used in some way, so they'll need to be installed:
 * sentry-sdk
 * statsd
 * gunicorn
-* djangowind
+* django-cas-ng
 
 ### Use it
 

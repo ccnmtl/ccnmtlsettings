@@ -22,7 +22,7 @@ setup(
         "boto3",
         "statsd",
         "gunicorn",
-        "djangowind",
+        "django-cas-ng",
         "django-impersonate",
     ],
     scripts = [],

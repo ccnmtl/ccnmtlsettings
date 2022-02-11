@@ -75,7 +75,6 @@ def common(**kwargs):
                     'django.template.context_processors.tz',
                     'django.template.context_processors.request',
                     'django.contrib.messages.context_processors.messages',
-                    'djangowind.context.context_processor',
                     'stagingcontext.staging_processor',
                     'gacontext.ga_processor',
                 ],
@@ -89,6 +88,7 @@ def common(**kwargs):
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django_cas_ng.middleware.CASMiddleware',
         'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'waffle.middleware.WaffleMiddleware',
@@ -112,7 +112,7 @@ def common(**kwargs):
         'smoketest',
         'gunicorn',
         'compressor',
-        'djangowind',
+        'django_cas_ng',
         'impersonate',
         'waffle',
         'django_markwhat',
@@ -135,29 +135,27 @@ def common(**kwargs):
         ('/sitemedia', 'sitemedia'),
     ]
 
-    # CAS settings
-
     AUTHENTICATION_BACKENDS = [
-        'djangowind.auth.SAMLAuthBackend',
         'django.contrib.auth.backends.ModelBackend',
+        'django_cas_ng.backends.CASBackend',
     ]
 
-    CAS_BASE = "https://cas.columbia.edu/"
-    WIND_PROFILE_HANDLERS = ['djangowind.auth.CDAPProfileHandler']
-    WIND_AFFIL_HANDLERS = [
-        'djangowind.auth.AffilGroupMapper',
-        'djangowind.auth.StaffMapper',
-        'djangowind.auth.SuperuserMapper',
-    ]
-    WIND_STAFF_MAPPER_GROUPS = ['tlc.cunix.local:columbia.edu']
-    WIND_SUPERUSER_MAPPER_GROUPS = [
-        'amm8',
-        'mar227',
-        'njn2118',
-        'sld2131',
-        'zm4',
-        'nd2664'
-    ]
+    # django-cas-ng settings
+    CAS_SERVER_URL = "https://cas.columbia.edu/cas/"
+
+    # CAS 3 is required for affiliations and other metadata:
+    # https://cuit.columbia.edu/cas-authentication
+    CAS_VERSION = '3'
+    CAS_ADMIN_REDIRECT = False
+
+    # Translate CUIT's CAS user attributes to the Django user model.
+    # https://cuit.columbia.edu/content/cas-3-ticket-validation-response
+    CAS_APPLY_ATTRIBUTES_TO_USER = True
+    CAS_RENAME_ATTRIBUTES = {
+        'givenName': 'first_name',
+        'lastName': 'last_name',
+        'mail': 'email',
+    }
 
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
     SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
