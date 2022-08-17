@@ -154,7 +154,6 @@ def common(**kwargs):
         'amm8',
         'mar227',
         'njn2118',
-        'sld2131',
         'zm4',
         'nd2664'
     ]
