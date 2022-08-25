@@ -1,3 +1,7 @@
+1.9.4
+==================
+* Decrease file logging level to INFO
+
 1.9.3 (2022-08-25)
 ==================
 * Only enable file logging on staging/production

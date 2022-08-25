@@ -65,7 +65,7 @@ def common(**kwargs):
         'disable_existing_loggers': False,
         'handlers': {
             'file': {
-                'level': 'DEBUG',
+                'level': 'INFO',
                 'class': 'logging.FileHandler',
                 'filename': '/var/log/django/' + project + '/debug.log',
             },
@@ -73,7 +73,7 @@ def common(**kwargs):
         'loggers': {
             'django': {
                 'handlers': ['file'],
-                'level': 'DEBUG',
+                'level': 'INFO',
                 'propagate': True,
             },
         },
