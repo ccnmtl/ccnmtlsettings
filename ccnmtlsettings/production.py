@@ -60,4 +60,23 @@ def common(**kwargs):
         STATIC_ROOT = "/var/www/" + project + "/" + project + "/media/"
         COMPRESS_ROOT = STATIC_ROOT
 
+    LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'handlers': {
+            'file': {
+                'level': 'DEBUG',
+                'class': 'logging.FileHandler',
+                'filename': '/var/log/django/' + project + '/debug.log',
+            },
+        },
+        'loggers': {
+            'django': {
+                'handlers': ['file'],
+                'level': 'DEBUG',
+                'propagate': True,
+            },
+        },
+    }
+
     return locals()
