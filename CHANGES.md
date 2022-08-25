@@ -1,3 +1,7 @@
+1.9.3 (2022-08-25)
+==================
+* Only enable file logging on staging/production
+
 1.9.2 (2022-08-25)
 ==================
 * Enable django file logging
