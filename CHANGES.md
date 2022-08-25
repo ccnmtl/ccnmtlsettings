@@ -1,6 +1,10 @@
-1.9.2
+1.9.2 (2022-08-25)
 ==================
 * Enable django file logging
+* Add back the AWS S3 'public-read' setting. Private uploads should
+  set their acl explicitly to 'private' to override this. We need this
+  for public assets with django-storages, and I mistakenly removed it.
+* Add "noreply" to our default from email
 
 1.9.1 (2021-08-04)
 ==================
