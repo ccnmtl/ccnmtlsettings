@@ -6,7 +6,7 @@ setup(
     author="Anders Pearson",
     author_email="ctl-dev@columbia.edu",
     url="https://github.com/ccnmtl/ccnmtlsettings",
-    description="CCNMTL common Django base settings",
+    description="Columbia CTL common Django base settings",
     long_description="common settings we use across all our projects",
     install_requires = [
         "django_compressor",
