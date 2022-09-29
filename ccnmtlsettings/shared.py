@@ -155,7 +155,8 @@ def common(**kwargs):
         'mar227',
         'njn2118',
         'zm4',
-        'nd2664'
+        'nd2664',
+        'da2799',
     ]
 
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
