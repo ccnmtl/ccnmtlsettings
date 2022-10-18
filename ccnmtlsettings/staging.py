@@ -71,7 +71,7 @@ def common(**kwargs):
             'file': {
                 'level': 'INFO',
                 'class': 'logging.FileHandler',
-                'filename': '/var/log/django/' + project + '/debug.log',
+                'filename': '/var/log/django/' + project + '.log',
             },
         },
         'loggers': {
