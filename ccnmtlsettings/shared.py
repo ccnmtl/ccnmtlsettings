@@ -91,7 +91,6 @@ def common(**kwargs):
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
-        'waffle.middleware.WaffleMiddleware',
         'impersonate.middleware.ImpersonateMiddleware',
         'django.middleware.security.SecurityMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware'

@@ -1,6 +1,7 @@
 1.9.5
 ==================
-* Update project log path
+* Updated project log path
+* Removed django-waffle
 
 1.9.4 (2022-08-25)
 ==================
