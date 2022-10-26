@@ -11,7 +11,6 @@ setup(
     install_requires = [
         "django_compressor",
         "django-debug-toolbar",
-        "django-waffle",
         "coverage",
         "django-smoketest",
         "django-extensions",
