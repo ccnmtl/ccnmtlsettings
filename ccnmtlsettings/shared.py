@@ -113,7 +113,6 @@ def common(**kwargs):
         'compressor',
         'djangowind',
         'impersonate',
-        'waffle',
         'django_markwhat',
     ]
 
