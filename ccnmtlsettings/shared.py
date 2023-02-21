@@ -16,6 +16,7 @@ def common(**kwargs):
         '.ctl.columbia.edu',
         '.ccnmtl.columbia.edu',
         'localhost',
+        '127.0.0.1',
     ]
 
     DATABASES = {
