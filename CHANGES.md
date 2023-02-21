@@ -1,7 +1,8 @@
-1.9.5
+1.9.5 (2023-02-21)
 ==================
 * Updated project log path
 * Removed django-waffle
+* Added 127.0.0.1 to ALLOWED_HOSTS
 
 1.9.4 (2022-08-25)
 ==================
