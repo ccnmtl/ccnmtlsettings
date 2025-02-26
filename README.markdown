@@ -1,3 +1,7 @@
+This project is deprecated in favor of [ctlsettings](https://github.com/ccnmtl/ctlsettings).
+
+--
+
 [![Actions Status](https://github.com/ccnmtl/ccnmtlsettings/workflows/build-and-test/badge.svg)](https://github.com/ccnmtl/ccnmtlsettings/actions)
 
 These are the common settings we use across all our Django apps,
